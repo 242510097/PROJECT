@@ -71,21 +71,26 @@ p.subtitle{margin:0; color:var(--muted); font-size:0.9rem}
 }
 
 #loginPage{
-  position:fixed;
+   position:fixed;
   inset:0;
-  background:var(--bg);
+  background: var(--bg); /* bisa dihapus jika ingin sepenuhnya gambar */
+  /* Tambahkan ini untuk background gambar */
+  background-image: url('https://sekolahanak.com/wp-content/uploads/2025/04/SD-Kristen-Trimulia-Hits-image-1-scaled.webp');
+  background-size: cover; /* menyesuaikan gambar agar menutup seluruh background */
+  background-position: center; /* posisi gambar di tengah */
   display:flex;
   justify-content:center;
   align-items:center;
   z-index:999;
 }
 .login-box{
-  background:var(--card);
+  background-color: rgba(255, 255, 255, 0.8); 
   padding:30px;
   border-radius:12px;
-  width:300px;
+  width:380px;
   box-shadow:0 6px 25px rgba(0,0,0,0.2);
   text-align:center;
+  border: 1px solid var(--accent);
 }
 .login-box h2{margin-bottom:20px;}
 .login-box input{
@@ -260,7 +265,7 @@ const products = [
 { id:30, title:"Donut", cat:"Deserts", size:"1 pcs", price:5000, desc:"Donut manis lembut, cocok untuk camilan atau sarapan.", img: "https://i.pinimg.com/1200x/28/16/8c/28168c6f54f32f22d68578c172484d55.jpg"},
 { id:31, title:"Roti", cat:"Deserts", size:"1 pcs", price:7000, desc:"Roti lembut dan hangat, pas untuk sarapan atau camilan.", img: "https://i.pinimg.com/1200x/9b/4d/0f/9b4d0f9f743c15e4ec555eceb8d317cb.jpg" },
 { id:32, title:"Hot Dog", cat:"Snacks", size:"1 pcs", price:10000, desc:"Hot dog lezat dengan sosis gurih dan roti hangat.", img: "https://i.pinimg.com/1200x/3c/ec/1a/3cec1ae6e9432ab292e154b9bbcef45d.jpg"},
-{ id:33, title:"Mie Yamien", cat:"Noodles", size:"1 bowl", price:10000, desc:"Mie Yamyien kenyal dengan kuah gurih yang menggugah selera.", img: "https://i.pinimg.com/736x/46/6d/d3/466dd3d62f2d7a1b626bb3fa63f97ac.jpg"},
+{ id:33, title:"Mie Yamien", cat:"Noodles", size:"1 bowl", price:10000, desc:"Mie Yamyien kenyal dengan kuah gurih yang menggugah selera.", img: "https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/81/2025/04/28/Draft-foto-fis-2025-04-28T113600537-4085193919.png"},
 { id:34, title:"Silver Queen", cat:"Sweets", size:"1 pcs", price:12000, desc:"Silver Queen coklat lezat, manis, dan meleleh di mulut.", img: "https://i.pinimg.com/1200x/9d/b9/da/9db9dad80e29391007afaee4318a490c.jpg" },
 { id:35, title:"Pangsit Chilli", cat:"Snacks", size:"1 cup", price:12000, desc:"Pangsit Chilli pedas gurih, nikmat untuk cemilan atau lauk.", img: "https://i.pinimg.com/736x/f8/8e/eb/f88eeb4fe80bfd25fa7716094d756973.jpg"},
 { id:36, title:"Cookies", cat:"Deserts", size:"1 pcs", price:8000, desc:"Cookies renyah manis, cocok untuk cemilan kapan saja.", img: "https://i.pinimg.com/1200x/98/4c/d1/984cd1f8dafaf605a30cefafe16a1095.jpg" },
